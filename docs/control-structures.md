@@ -1,8 +1,8 @@
 # Control Structures
 
-Csq supports all types of control structures present in Python.
+Csq supports most of control structures present in Python.
 
-:warning: Be aware of the indentation since Csq doesn't consider tabs as indents.
+:warning: Be aware of the indentation, Csq doesn't consider tabs as indents.
 
 ## If
 
