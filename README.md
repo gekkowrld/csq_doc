@@ -16,7 +16,7 @@ make install
 
 ## Features
 
-- Easy to learn syntax
-- Fast speed
-- Dynamic typing
-- Memory safety
+-   Easy to learn syntax
+-   Fast speed
+-   Dynamic typing
+-   Memory safety
