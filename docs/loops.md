@@ -1,3 +1,5 @@
+{% include codeHeader.html %}
+
 # Loops
 
 To repeat a piece of code, we use loops. In Csq, there are two types of loops: while and for.
