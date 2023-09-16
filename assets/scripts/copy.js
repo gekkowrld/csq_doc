@@ -1,5 +1,6 @@
 // This assumes that you're using Rouge; if not, update the selector
-const codeBlocks = document.querySelectorAll('.code-header + .highlighter-rouge');
+const codeBlocks =
+    document.querySelectorAll('.code-header + .highlighter-rouge');
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
 copyCodeButtons.forEach((copyCodeButton, index) => {
@@ -10,7 +11,7 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
     window.navigator.clipboard.writeText(code);
 
     // Update the button text visually
-    const { innerText: originalText } = copyCodeButton;
+    const {innerText : originalText} = copyCodeButton;
     copyCodeButton.innerText = 'Copied!';
 
     // (Optional) Toggle a class for styling the button
