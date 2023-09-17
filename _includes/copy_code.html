@@ -1,12 +1,13 @@
 <style>
   .copy-button {
-  background-color: #464646;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin: 5px 0;
+  	background-color: #464646;
+  	color: #fff;
+  	border: none;
+  	border-radius: 4px;
+  	padding: 5px 10px;
+  	cursor: pointer;
+  	margin: 5px 0;
+	display: block;
 }
 </style>
 <script>
@@ -24,14 +25,17 @@
 			document.execCommand("copy");
 			document.body.removeChild(textArea);
 
-			rest_copy_btn_name();
 			copyButton.innerText = "Copied to clipboard!";
+
+			setTimeout(() => {
+                copyButton.innerText = "Copy";
+            }, 2000);
 		});
 		parent.insertBefore(copyButton, block);
 	});
 });
 
-function rest_copy_btn_name() {
+function reset_copy() {
 	// function that rest previous clipboard copy button inner text
 	document.querySelectorAll(".copy-button").forEach((blck) => {
 		blck.innerText = "Copy";
